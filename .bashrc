@@ -87,3 +87,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# nano makes me sad
+# like this -> :(
+export EDITOR=vim

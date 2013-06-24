@@ -31,7 +31,12 @@ shopt -s checkwinsize
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # Basic prompt
-PS1='\u@\h:\w\$ '
+PS1='<\A>\u@\h:\w$(__git_ps1 " [%s]")\$ '
+
+# Add more git info to the prompt
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWSTASHSTATE=true
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in

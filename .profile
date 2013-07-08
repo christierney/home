@@ -20,3 +20,7 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+# set up JAVA. This is here rather than in .bashrc so I can launch java apps
+# without requiring a terminal.
+export JAVA_HOME=$HOME/opt/java7

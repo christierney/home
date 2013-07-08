@@ -91,3 +91,13 @@ fi
 # nano makes me sad
 # like this -> :(
 export EDITOR=vim
+
+# access java
+export PATH=$PATH:$JAVA_HOME/bin
+
+# set up Maven
+export M2_HOME=$HOME/bithub/maven
+export PATH=$PATH:$M2_HOME/bin
+
+# init gvm (groovy version manager)
+[[ -s "/home/chris/.gvm/bin/gvm-init.sh" ]] && source "/home/chris/.gvm/bin/gvm-init.sh"

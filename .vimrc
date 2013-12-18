@@ -12,6 +12,9 @@ set hlsearch
 set ignorecase
 set smartcase
 
+set background=dark
+colorscheme solarized
+
 " private shortcut mappings
 let mapleader = ","
 nnoremap <Leader>r :set relativenumber!<cr>
